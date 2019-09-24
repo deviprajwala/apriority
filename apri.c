@@ -21,6 +21,7 @@ int t=5;//number of transaction
 int n=4;//max items in one transaction
 int el=6;//number of items
 int k[20]={1,2,0,0,1,3,4,5,2,3,4,6,1,2,3,4,1,2,3,6};
+int supcount=3;//support count since its 60% 0.6*5=3
 
 struct node
 {
@@ -29,6 +30,10 @@ struct node
 };
 typedef struct node *node;
 
+struct itemset
+{
+  
+}
 node root,rooti;
 
 node getnode();
@@ -168,16 +173,36 @@ void initial_assign(node rooti)//initial transaction is in rooti
 }
 void check_for_match(int item_set,int fk[25],int l)
 {
-  int item1,item2;
-  for(i=0;i<l;i++)
+  int item1,item2,i,j,k,m,count=0,q,r;
+  for(i=0;i<l-1;i++)
   {
-   item1=fk[i];
+   for(m=i+1;m<l;m++)
+   {
+    item1=fk[i];//assign 2 elements and check for its existance in the transaction
+    item2=fk[m];
+    goto label;
+   }
+  }
+ 
+label:
+  {
   for(j=0;j<t;j++)
   {
    for(k=0;k<n;k++)
    {
-    if(rooti->p[j]->key[k]==item1
+    if(rooti->p[j]->key[k]==item1)
+    {
+      for(r=k+1;r<n-1;r++)
+      {
+      rooti->p[j]->key[r]==item2;
+      count++;
+      }
+    }
    }
+  }
+  if(count>=supcount)
+  {
+   
   }
   }
 }
