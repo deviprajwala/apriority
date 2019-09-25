@@ -1,0 +1,31 @@
+void item(int x)
+{
+ if(x==1)
+ {
+  printf(" Beer ");
+ }
+ else if(x==2)
+ {
+  printf(" Bread ");
+ }
+ else if(x==3)
+ {
+  printf(" Cola ");
+ }
+ else if(x==4)
+ {
+  printf(" Diaper ");
+ }
+ else if(x==5)
+ {
+  printf(" Egg ");
+ }
+ else if(x==6)
+ {
+  printf(" Milk ");
+ }
+ else 
+ {
+  printf(" Nothing ");
+ }
+}

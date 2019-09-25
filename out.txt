@@ -1,0 +1,30 @@
+The number of transactions is 5
+The number of items is 6
+Enter the matrix elements
+
+
+The matrix elements
+0 1 0 0 0 1 
+1 1 0 1 1 0 
+1 0 1 1 0 1 
+1 1 0 1 0 1 
+0 1 1 1 0 1 
+
+
+The frequent 1-item set is:
+1  Beer 
+2  Bread 
+4  Diaper 
+6  Milk 
+
+
+The frequent 2-itemset is:
+(4,6)  Diaper  Milk 
+(2,6)  Bread  Milk 
+(2,4)  Bread  Diaper 
+
+
+Items which are bought together are:
+(2 ,6 ,4)
+ Bread  Milk  Diaper 
+The frequency of this combination is 2
