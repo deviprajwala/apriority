@@ -17,10 +17,10 @@ int matrix[25][25];
 //f[3]={2,6,4,1}
 //f[4]={2,6,4,3}
 
-int t=5;//number of transaction
+int t=10;//number of transaction
 int el=6;//number of items
 int fk[20];//frequent 1 itemset
-int supcount=3;//support count ,we assume it to be 60% 0.6*5=3
+int supcount=3;//support count ,we assume it to be 60% 0.6*6=3.6
 struct two_itemset {
    int key1;
    int key2;

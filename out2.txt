@@ -1,0 +1,43 @@
+The number of transactions is 10
+The number of items is 8
+Enter the matrix elements
+
+
+The matrix elements
+1 0 0 1 0 1 1 1 
+0 1 0 1 0 1 0 1 
+1 1 1 1 0 0 0 0 
+1 1 1 1 1 1 1 0 
+0 0 0 0 1 1 1 1 
+0 0 1 1 0 0 1 1 
+1 1 1 1 1 1 0 0 
+0 0 0 0 1 0 0 1 
+1 1 1 1 1 0 0 0 
+0 0 0 0 0 1 1 1 
+
+
+The frequent 1-item set is:
+1  Beer 
+2  Bread 
+3  Cola 
+4  Diaper 
+5  Egg 
+6  Milk 
+7  Chocolate 
+8  Icecream 
+
+
+The frequent 2-itemset is:
+(7,8)  Chocolate  Icecream 
+(6,8)  Milk  Icecream 
+(6,7)  Milk  Chocolate 
+(4,6)  Diaper  Milk 
+(3,4)  Cola  Diaper 
+(2,4)  Bread  Diaper 
+(2,3)  Bread  Cola 
+
+
+Items which are bought together are:
+(6 ,8 ,7)
+ Milk  Icecream  Chocolate 
+The frequency of this combination is 3
