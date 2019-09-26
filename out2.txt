@@ -31,8 +31,15 @@ The frequent 2-itemset is:
 (7,8)  Chocolate  Icecream 
 (6,8)  Milk  Icecream 
 (6,7)  Milk  Chocolate 
+(5,6)  Egg  Milk 
+(4,8)  Diaper  Icecream 
+(4,7)  Diaper  Chocolate 
 (4,6)  Diaper  Milk 
+(4,5)  Diaper  Egg 
+(3,5)  Cola  Egg 
 (3,4)  Cola  Diaper 
+(2,6)  Bread  Milk 
+(2,5)  Bread  Egg 
 (2,4)  Bread  Diaper 
 (2,3)  Bread  Cola 
 
@@ -41,3 +48,6 @@ Items which are bought together are:
 (6 ,8 ,7)
  Milk  Icecream  Chocolate 
 The frequency of this combination is 3
+(4 ,8 ,7)
+ Diaper  Icecream  Chocolate 
+The frequency of this combination is 5

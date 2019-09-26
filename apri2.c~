@@ -20,7 +20,7 @@ int matrix[25][25];
 int t=10;//number of transaction
 int el=8;//number of items
 int fk[20];//frequent 1 itemset
-int supcount=4;//support count ,we assume it to be 60% 0.6*6=3.6
+int supcount=3;//support count ,we assume it to be 60% 0.6*6=3.6
 struct two_itemset {
    int key1;
    int key2;
@@ -204,11 +204,11 @@ void item(int x)//item number which corresponds to the item,here we have conside
  {
   printf(" Milk ");
  }
- else if(x==7)
+ else if(x==6)
  {
   printf(" Chocolate ");
  }
- else if(x==8)
+ else if(x==6)
  {
   printf(" Icecream ");
  }
